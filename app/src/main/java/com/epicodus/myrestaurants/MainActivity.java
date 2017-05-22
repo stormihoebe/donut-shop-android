@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
                     String zip = mZipEditText.getText().toString();
                     Log.d(TAG, zip);
                     Intent intent = new Intent(MainActivity.this, RestaurantActivity.class);
+                    intent.putExtra("zip", zip);
                     startActivity(intent);
                 }
             });
