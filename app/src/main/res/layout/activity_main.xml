@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="28dp"
-        android:id="@+id/ember_sucks_button"
+        android:id="@+id/emberButton"
         android:textSize="18sp"
         android:textColor="@color/colorTextIcons"
         android:background="@color/colorAccent"
@@ -36,6 +36,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
-        android:id="@+id/textView" />
+        android:id="@+id/emberHeader" />
 
 </RelativeLayout>
