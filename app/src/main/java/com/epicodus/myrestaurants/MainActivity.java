@@ -1,5 +1,6 @@
 package com.epicodus.myrestaurants;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,7 +19,8 @@ public class MainActivity extends AppCompatActivity {
             mEmberButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(MainActivity.this, "It's not that bad. We just like the meme", Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(MainActivity.this, RestaurantActivity.class);
+                    startActivity(intent);
                 }
             });
     }
