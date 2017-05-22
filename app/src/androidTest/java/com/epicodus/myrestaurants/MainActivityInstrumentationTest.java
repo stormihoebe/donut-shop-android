@@ -17,7 +17,7 @@ public class MainActivityInstrumentationTest {
             new ActivityTestRule<>(MainActivity.class);
 
     @Test
-    public void validateEdutText() {
+    public void validateEditText() {
         onView(withId(R.id.enterZip)).perform(typeText("97214"))
                 .check(matches(withText("97214")));
     }

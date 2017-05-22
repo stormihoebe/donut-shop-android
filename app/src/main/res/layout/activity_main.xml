@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Lotsa Donuts"
-        android:textSize="40sp"
+        android:textSize="59sp"
         android:textStyle="normal|bold"
         android:textColor="@color/colorTextIcons"
         android:layout_alignParentTop="true"

@@ -7,13 +7,15 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
+import android.widget.TextView;
+import android.graphics.Typeface;
 
 public class MainActivity extends AppCompatActivity {
 
     public static final String TAG = MainActivity.class.getSimpleName();
     private EditText mZipEditText;
     private Button mEmberButton;
+    private TextView mMyRestaurantsTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,5 +33,8 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
+        mMyRestaurantsTextView = (TextView) findViewById(R.id.myRestaurantsTextView);
+        Typeface pacificoFont = Typeface.createFromAsset(getAssets(), "fonts/Pacifico.ttf");
+        mMyRestaurantsTextView.setTypeface(pacificoFont);
     }
 }
