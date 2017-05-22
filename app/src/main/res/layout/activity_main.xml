@@ -14,18 +14,6 @@
         android:scaleType="centerCrop"
         android:id="@+id/donutsBackground" />
 
-    <Button
-        android:text="Find Donuts"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:id="@+id/emberButton"
-        android:textSize="18sp"
-        android:textColor="@color/colorTextIcons"
-        android:background="@color/colorAccent"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,6 +24,31 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
-        android:id="@+id/emberHeader" />
+        android:id="@+id/emberHeader"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="Find Donuts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emberButton"
+        android:textSize="18sp"
+        android:textColor="@color/colorTextIcons"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/enterZip"
+        android:layout_above="@+id/emberButton"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorTextIcons"
+        android:hint="Enter Zip Code"
+        android:textAlignment="center"
+        android:textSize="20sp" />
 
 </RelativeLayout>
