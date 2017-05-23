@@ -13,7 +13,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     @Bind(R.id.emberButton) Button mEmberButton;
     @Bind(R.id.enterZip) EditText mZipEditText;
     @Bind(R.id.myRestaurantsTextView) TextView mMyRestaurantsTextView;
@@ -23,16 +23,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        mEmberButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String zip = mZipEditText.getText().toString();
-                Intent intent = new Intent(MainActivity.this, RestaurantActivity.class);
-                intent.putExtra("zip", zip);
-                startActivity(intent);
-            }
-        });
+        mEmberButton.setOnClickListener(new View.OnClickListener(this);
         Typeface pacificoFont = Typeface.createFromAsset(getAssets(), "fonts/Pacifico.ttf");
         mMyRestaurantsTextView.setTypeface(pacificoFont);
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v == mEmberButton) {
+            String zip = mZipEditText.getText().toString();
+            Intent intent = new Intent(MainActivity.this, RestaurantActivity.class);
+            intent.putExtra("zip", zip);
+            startActivity(intent);
+        }
     }
 }
