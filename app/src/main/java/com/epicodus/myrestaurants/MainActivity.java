@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        mEmberButton.setOnClickListener(new View.OnClickListener(this);
+        mEmberButton.setOnClickListener(this);
         Typeface pacificoFont = Typeface.createFromAsset(getAssets(), "fonts/Pacifico.ttf");
         mMyRestaurantsTextView.setTypeface(pacificoFont);
     }
